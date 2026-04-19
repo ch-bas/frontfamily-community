@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="420" font-family="'JetBrains Mono','Fira Code','SF Mono',Menlo,monospace" font-size="13">
+  <style>
+    .bg { fill: #0d1117; }
+    .header { fill: #161b22; }
+    .text { fill: #c9d1d9; }
+    .dim { fill: #6e7681; }
+    .green { fill: #3fb950; }
+    .cyan { fill: #58a6ff; }
+    .yellow { fill: #d29922; }
+    .white { fill: #f0f6fc; }
+    .prompt { fill: #7ee787; }
+    @keyframes t1 { 0%,5% { opacity: 0; } 8% { opacity: 1; } }
+    @keyframes t2 { 0%,15% { opacity: 0; } 18% { opacity: 1; } }
+    @keyframes t3 { 0%,25% { opacity: 0; } 28% { opacity: 1; } }
+    @keyframes t4 { 0%,32% { opacity: 0; } 35% { opacity: 1; } }
+    @keyframes t5 { 0%,40% { opacity: 0; } 43% { opacity: 1; } }
+    @keyframes t6 { 0%,48% { opacity: 0; } 51% { opacity: 1; } }
+    @keyframes t7 { 0%,56% { opacity: 0; } 59% { opacity: 1; } }
+    @keyframes t8 { 0%,64% { opacity: 0; } 67% { opacity: 1; } }
+    @keyframes t9 { 0%,72% { opacity: 0; } 75% { opacity: 1; } }
+    @keyframes t10 { 0%,80% { opacity: 0; } 83% { opacity: 1; } }
+    @keyframes t11 { 0%,88% { opacity: 0; } 91% { opacity: 1; } }
+    @keyframes cursor { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="680" height="420" rx="8"/>
+
+  <!-- Title bar -->
+  <rect class="header" width="680" height="32" rx="8"/>
+  <rect class="bg" y="24" width="680" height="8"/>
+  <circle cx="16" cy="16" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="16" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="16" r="5" fill="#28c840"/>
+  <text x="340" y="20" text-anchor="middle" class="dim" font-size="11">frontfamily — terminal</text>
+
+  <!-- Line 1: command -->
+  <g style="animation: t1 12s infinite">
+    <text x="16" y="60" class="prompt">$</text>
+    <text x="30" y="60" class="white">npx @frontfamily/cli eject auth-form data-table -f react-mui</text>
+  </g>
+
+  <!-- Line 2: header -->
+  <g style="animation: t2 12s infinite">
+    <text x="16" y="90" class="cyan">┌</text>
+    <text x="30" y="90" class="cyan">  FrontFamily Eject</text>
+  </g>
+
+  <!-- Line 3: pipe -->
+  <g style="animation: t3 12s infinite">
+    <text x="16" y="112" class="cyan">│</text>
+  </g>
+
+  <!-- Line 4: first file -->
+  <g style="animation: t4 12s infinite">
+    <text x="16" y="134" class="cyan">◆</text>
+    <text x="34" y="134" class="green">  components/AuthFormPattern.tsx</text>
+  </g>
+
+  <!-- Line 5: pipe -->
+  <g style="animation: t5 12s infinite">
+    <text x="16" y="156" class="cyan">│</text>
+  </g>
+
+  <!-- Line 6: second file -->
+  <g style="animation: t6 12s infinite">
+    <text x="16" y="178" class="cyan">◆</text>
+    <text x="34" y="178" class="green">  components/MuiLineage.tsx</text>
+  </g>
+
+  <!-- Line 7: pipe -->
+  <g style="animation: t7 12s infinite">
+    <text x="16" y="200" class="cyan">│</text>
+  </g>
+
+  <!-- Line 8: summary -->
+  <g style="animation: t8 12s infinite">
+    <text x="16" y="222" class="cyan">└</text>
+    <text x="34" y="222" class="green">  2 ejected</text>
+  </g>
+
+  <!-- Blank line -->
+  <g style="animation: t9 12s infinite">
+    <text x="16" y="256" class="prompt">$</text>
+    <text x="30" y="256" class="white">npx @frontfamily/cli list -f react-eui</text>
+  </g>
+
+  <!-- List output -->
+  <g style="animation: t10 12s infinite">
+    <text x="16" y="286" class="cyan">react-eui</text>
+    <text x="110" y="286" class="dim">— 18 patterns:</text>
+    <text x="16" y="308" class="green">  data-table</text>
+    <text x="195" y="308" class="dim">→ EnterpriseLineage.tsx</text>
+    <text x="16" y="326" class="green">  auth-form</text>
+    <text x="195" y="326" class="dim">→ EuiAuthForm.tsx</text>
+    <text x="16" y="344" class="green">  kanban-board</text>
+    <text x="195" y="344" class="dim">→ EuiKanbanBoard.tsx</text>
+    <text x="16" y="362" class="green">  chat-ui</text>
+    <text x="195" y="362" class="dim">→ EuiChatUI.tsx</text>
+    <text x="16" y="380" class="dim">  ... 14 more</text>
+  </g>
+
+  <!-- Cursor -->
+  <g style="animation: t11 12s infinite">
+    <rect x="16" y="395" width="8" height="14" class="green" style="animation: cursor 1s infinite"/>
+  </g>
+</svg>
